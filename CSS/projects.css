@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    background-color: #ff8800;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.project h2 {
+    color: #ff8800;
+    margin-bottom: 10px;
+}
+
+.project p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.project a {
+    color: #ff8800;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+}
