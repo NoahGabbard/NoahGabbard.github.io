@@ -17,7 +17,7 @@ body {
 }
 
 h1, h2 {
-    color: #ff8800;
+    color: #008cff;
 }
 
 .header {
@@ -34,7 +34,7 @@ h1, h2 {
 }
 
 .contact a {
-    color: #ff8800;
+    color: #008cff;
     text-decoration: none;
 }
 
@@ -44,7 +44,7 @@ h1, h2 {
 
 .section h2 {
     margin-bottom: 10px;
-    border-bottom: 2px solid #ff8800;
+    border-bottom: 2px solid #008cff;
     padding-bottom: 5px;
 }
 
@@ -70,7 +70,7 @@ h1, h2 {
 
 .skills ul li {
     display: inline-block;
-    background: #ff8800;
+    background: #008cff;
     color: #fff;
     padding: 5px 10px;
     margin: 5px 5px 5px 0;
@@ -79,4 +79,21 @@ h1, h2 {
 
 footer {
     text-align: center;
+}
+
+footer button {
+    display: inline-block;
+    background: #008cff;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 5px 5px 5px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+}
+
+footer button:hover {
+    background: #005bb5;
 }

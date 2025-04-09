@@ -9,7 +9,7 @@ body {
 
 header {
     text-align: center;
-    background-color: #ff8800;
+    background-color: #008cff;
     color: #fff;
     padding: 20px 0;
 }
@@ -36,7 +36,7 @@ main {
 }
 
 .project h2 {
-    color: #ff8800;
+    color: #008cff;
     margin-bottom: 10px;
 }
 
@@ -46,7 +46,7 @@ main {
 }
 
 .project a {
-    color: #ff8800;
+    color: #008cff;
     text-decoration: none;
     font-weight: bold;
 }
