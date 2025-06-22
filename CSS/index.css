@@ -107,18 +107,31 @@ footer button:hover {
     background: #005bb5;
 }
 
-/* Media query for desktop-sized screens */
-@media (min-width: 768px) {
-    body {
-        flex-direction: row;
-        justify-content: center;
-    }
+.projects-btn {
+    display: inline-block;
+    background: #008cff;
+    color: #fff;
+    padding: 15px 32px;
+    margin: 20px 0 0 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.2s, transform 0.1s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
 
+.projects-btn:hover, .projects-btn:focus {
+    background: #005bb5;
+    transform: translateY(-2px) scale(1.04);
+}
+
+@media (min-width: 768px) {
     .container {
         max-width: 1200px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        margin: 40px auto;
     }
 
     .header, footer {
@@ -127,7 +140,6 @@ footer button:hover {
     }
 
     .section {
-        flex: 1;
-        margin: 0 10px;
+        margin: 0 0 20px 0;
     }
 }

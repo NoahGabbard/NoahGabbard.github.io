@@ -5,44 +5,90 @@ body {
     padding: 0;
     color: #333;
     background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-header {
-    text-align: center;
-    background-color: #008cff;
-    color: #fff;
-    padding: 20px 0;
-}
-
-header h1 {
-    margin: 0;
-}
-
-main {
+.container, main {
     max-width: 800px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 10px;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.project {
-    margin-bottom: 20px;
+h1, h2 {
+    color: #008cff;
+}
+
+.header, header {
+    text-align: center;
+    width: 100%;
+}
+
+.header h1, header h1 {
+    margin: 10px 0;
+}
+
+.contact {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.contact a {
+    color: #008cff;
+    text-decoration: none;
+}
+
+.section {
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #008cff;
+    padding-bottom: 5px;
+}
+
+.item, .project {
+    margin-bottom: 15px;
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
     background-color: #f9f9f9;
+    text-align: left;
 }
 
-.project h2 {
+.item h3, .project h3, .project h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
     color: #008cff;
-    margin-bottom: 10px;
 }
 
-.project p {
-    margin: 10px 0;
+.item p, .project p {
+    margin: 5px 0;
+    font-size: 14px;
     color: #555;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills ul li {
+    display: inline-block;
+    background: #008cff;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 5px 5px 5px 0;
+    border-radius: 4px;
 }
 
 .project a {
@@ -56,5 +102,59 @@ main {
 }
 
 footer {
-    text-align: center:
+    text-align: center;
+    width: 100%;
+}
+
+footer button {
+    display: inline-block;
+    background: #008cff;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 5px 5px 5px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+}
+
+footer button:hover {
+    background: #005bb5;
+}
+
+#back-arrow {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 2rem;
+    color: #000000;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    user-select: none;
+    outline: none;
+    transition: color 0.2s;
+    opacity: 1;
+}
+
+#back-arrow:hover, #back-arrow:focus {
+    color: #005bb5;
+}
+
+@media (min-width: 768px) {
+    .container, main {
+        max-width: 1200px;
+        margin: 40px auto;
+    }
+
+    .header, header, footer {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section {
+        margin: 0 0 20px 0;
+    }
 }
