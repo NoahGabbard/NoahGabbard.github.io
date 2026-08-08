@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var label = isDark ? 'Switch to light mode' : 'Switch to dark mode';
         toggle.setAttribute('aria-label', label);
         toggle.setAttribute('title', label);
-        toggle.textContent = isDark ? '☀' : '☾';
+        toggle.textContent = isDark ? 'Switch to Light Mode ☀' : 'Switch to Dark Mode ☾';
         try {
             localStorage.setItem('theme', theme);
         } catch (error) {

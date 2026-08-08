@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
             var label = isDark ? 'Switch to light mode' : 'Switch to dark mode';
             themeToggle.setAttribute('aria-label', label);
             themeToggle.setAttribute('title', label);
-            themeToggle.textContent = isDark ? '☀' : '☾';
+            themeToggle.textContent = isDark ? 'Switch to Light Mode ☀' : 'Switch to Dark Mode ☾';
             try {
                 localStorage.setItem('theme', theme);
             } catch (error) {

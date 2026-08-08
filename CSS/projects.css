@@ -16,9 +16,9 @@
     --hero-border: rgba(255, 255, 255, 0.2);
     --chip-bg: #eff6ff;
     --chip-border: #bfdbfe;
-    --toggle-bg: rgba(255, 255, 255, 0.14);
-    --toggle-border: rgba(255, 255, 255, 0.34);
-    --toggle-text: #ffffff;
+    --toggle-bg: rgba(255, 255, 255, 0.82);
+    --toggle-border: #cbd5e1;
+    --toggle-text: #0f172a;
 }
 
 :root[data-theme='dark'] {
@@ -73,25 +73,22 @@ footer,
 }
 
 .theme-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1100;
+    margin: 0 0 18px;
     border: 1px solid var(--toggle-border);
     background: var(--toggle-bg);
     color: var(--toggle-text);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-radius: 999px;
-    width: 42px;
-    height: 42px;
-    padding: 0;
-    display: grid;
-    place-items: center;
+    border-radius: 10px;
+    padding: 10px 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     font-family: inherit;
-    font-size: 1.05rem;
+    font-size: 0.82rem;
     font-weight: 600;
-    line-height: 1;
+    line-height: 1.2;
+    letter-spacing: 0.25px;
     cursor: pointer;
     transition: transform 0.15s, background 0.2s, border-color 0.2s;
 }
@@ -297,11 +294,6 @@ footer {
 
 /* ── Responsive ── */
 @media (max-width: 600px) {
-    .theme-toggle {
-        top: 14px;
-        right: 14px;
-    }
-
     main {
         padding: 24px 16px;
         margin: 0 auto;
