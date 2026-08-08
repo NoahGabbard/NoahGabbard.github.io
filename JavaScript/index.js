@@ -1,3 +1,3 @@
 function navigateToProjects() {
-    window.location.href = "projects.html";
+    window.location.href = 'projects.html';
 }

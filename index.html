@@ -3,101 +3,160 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="CSS/index.css">
-        <title>Noah Gabbard's Resume</title>
+        <meta name="description" content="Noah Gabbard — Web Developer and Process Guide based in Kentucky." />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="CSS/index.css" />
+        <title>Noah Gabbard — Portfolio</title>
     </head>
-
-
-
     <body>
-        <main class="container">
-            <section class="header">
+        <header class="hero">
+            <div class="hero-content">
                 <h1>Noah Gabbard</h1>
-                <p class="contact">
-                    Email:
-                    <a href="mailto:yourname@example.com"
-                        >gnoahm2001@gmail.com</a
-                    >
-                    | Phone: (859)-957-4559 | LinkedIn:
-                    <a href="#">www.linkedin.com/in/noah-gabbard-845732197</a>
-                </p>
+                <p class="hero-subtitle">Web Developer &amp; Process Guide</p>
+                <nav class="contact-bar" aria-label="Contact links">
+                    <a href="mailto:gnoahm2001@gmail.com">gnoahm2001@gmail.com</a>
+                    <span class="divider" aria-hidden="true">|</span>
+                    <a href="tel:+18599574559">(859) 957-4559</a>
+                    <span class="divider" aria-hidden="true">|</span>
+                    <a href="https://www.linkedin.com/in/noah-gabbard-845732197" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <span class="divider" aria-hidden="true">|</span>
+                    <a href="https://github.com/NoahGabbard" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </nav>
                 <button class="projects-btn" onclick="navigateToProjects()">View My Projects</button>
-            </section>
+            </div>
+        </header>
+
+        <main class="container">
             <section class="section">
                 <h2>Summary</h2>
                 <p>
-                    Dedicated Warehouse and Manufacturing employee.
-
-                Great while working within a team environment or working by myself.
-                Exceptional communication skills with an outgoing personality.
-                Technologically inclined with a mechanical aptitude that allows me to learn new skills quickly.
-                Always willing to learn new skills and advance my capabilities.
-
-                I believe having a strong work ethic combined with unceasing determination is the key to being a successful employee or business owner. I try to apply that outlook through any new endeavor.
+                    Web Developer and Code:You graduate with a background in warehouse operations and precision manufacturing.
+                    Experienced in HTML, CSS, JavaScript, Python, React, and React Native, with a proven ability to build clean,
+                    functional web applications. Brings a hands-on, team-first mentality developed through high-stakes logistics work
+                    at Amazon, combined with strong self-initiative for continuous learning and technical growth.
                 </p>
             </section>
+
             <section class="section">
                 <h2>Work Experience</h2>
-                <div class="item">
-                    <h3>Air Agent - Amazon</h3>
-                    <p>6/4/2023 - Present</p>
-                    <p>
-                        As a Process Guide (PG), I am responsible for the overall management or 'Gatekeeping' of my specific load order.
-
-                        Tracking ULD numbers, weight, type of ULD, which ULD to use next, percentage of fill, and it's all conveniently tracked digitally.
-                        Ensure associates have the tools they need to properly conduct their responsibilities.
-                        Working with my Area Manager to effectively communicate load order issues and resolve any issues my associates might have as well.
-                        
-                    </p>
-                </div>
-                <div class="item">
-                    <h3>Vertical Assembly Associate - Mazak</h3>
-                    <p>8/14/2021 - 1/17/2022</p>
-                    <p>
-                        As a Vertical Assembly Associate with Mazak, some of my key roles were to,
-
-                        Install coolant pans, install Augers, install electric pumps and wire them to the machine loom, run hoses from the pump to the machine connection points.
-                        Run coolant tests that were vital for proper machine testing. Each coolant test was run for a period of 4 hours to thoroughly stress test the quality of my work. After working on 40+ machines, not a single machine malfunctioned or was damaged.
-                        Assist fellow assembly associates with their daily duties while maintaining proper focus on my current project.
-                        Operate overhead cranes to carry each machine to the loading bay.
-                        
-                    </p>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-body">
+                            <h3>Process Guide / Air Agent — Amazon</h3>
+                            <span class="date">June 2023 – Present</span>
+                            <ul>
+                                <li>Manage and gatekeep load order sequences, tracking ULD numbers, weight, type, fill percentage, and placement digitally in real time.</li>
+                                <li>Coordinate with Area Managers to resolve load order discrepancies and address associate issues efficiently.</li>
+                                <li>Ensure associates are equipped with the tools and guidance needed to execute their responsibilities.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-body">
+                            <h3>Vertical Assembly Associate — Mazak</h3>
+                            <span class="date">August 2021 – January 2022</span>
+                            <ul>
+                                <li>Installed coolant systems — pans, augers, electric pumps, hoses — and performed 4-hour stress tests on 40+ machines with zero failures.</li>
+                                <li>Operated overhead cranes to transport completed machines to the loading bay.</li>
+                                <li>Assisted fellow associates while maintaining focus on concurrent assembly tasks.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </section>
-            <div class="section">
+
+            <section class="section">
+                <h2>Key Achievements</h2>
+                <div class="achievements">
+                    <div class="achievement-card">
+                        <div class="achievement-tag">Process Improvement</div>
+                        <h3>Non-Conveyable Market Sorting System</h3>
+                        <p>
+                            Identified a systemic inefficiency in the non-conveyable department where packages across different markets
+                            were loaded indiscriminately into ULDs, creating downstream confusion and slowing overall throughput.
+                            I took the lead in designing a market-based sorting solution — using visual markers and dedicated carts per
+                            market — and collaborated with a fellow associate to execute it on the floor. I then proposed the
+                            designation of an official staging area to our Area Manager, which gave the team a consistent visual
+                            reference and a repeatable process structure where none had existed before. Based on that improvement,
+                            our Area Manager recognized our work and connected us with the regional senior safety manager, giving us
+                            the opportunity to walk through the process changes directly and explain the operational and safety impact.
+                            <strong>The sorting method we introduced remains the department standard to this day.</strong>
+                        </p>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-tag">Ownership &amp; Safety</div>
+                        <h3>Proactive Workspace Hazard Resolution</h3>
+                        <p>
+                            Noticed a recurring accumulation of discarded cardboard building up beneath the department chutes —
+                            a safety concern that had gone unaddressed and was beginning to obstruct the work area.
+                            Without waiting for a directive, I partnered with a fellow associate to systematically stack,
+                            sort, palletize, and transport the cardboard to designated processing locations, fully restoring
+                            a clean and safe environment. We became directly responsible for ensuring cardboard was properly
+                            palletized and moved to the correct areas, and that workflow remains an active department process
+                            today. The initiative reflected a personal commitment to ownership beyond the defined scope of my
+                            role and set a visible behavioral standard for floor upkeep within the team.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
                 <h2>Education</h2>
-                <div class="item">
-                    <h3>GED - Lloyd Memorial High School</h3>
-                    <p>Class of 2019</p>
-                </div>
-                <div class="item">
-                    <h3>Web Developer - Code:You</h3>
-                    <p>Ongoing</p>
+                <div class="edu-grid">
+                    <div class="edu-card">
+                        <h3>Web Developer</h3>
+                        <p class="institution">Code:You</p>
+                        <span class="date">Class of 2025</span>
+                    </div>
+                    <div class="edu-card">
+                        <h3>GED</h3>
+                        <p class="institution">Lloyd Memorial High School</p>
+                        <span class="date">Class of 2019</span>
+                    </div>
                 </div>
             </section>
+
             <section class="section">
                 <h2>Skills</h2>
-                <div class="skills">
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Python</li>
-                        <li>Team Leadership</li>
-                        <li>Communication</li>
-                        <li>Problem Solving</li>
-                        <li>Adaptability</li>
-                    </ul>
+                <h3 class="skills-subheading">Aviation Security Focus</h3>
+                <div class="skills-grid">
+                    <span class="skill-tag">Communication Skills</span>
+                    <span class="skill-tag">Cross-Functional Collaboration</span>
+                    <span class="skill-tag">Quality Control</span>
+                    <span class="skill-tag">Dangerous Goods Awareness</span>
+                    <span class="skill-tag">Shipping &amp; Receiving</span>
+                    <span class="skill-tag">Freight Experience</span>
+                    <span class="skill-tag">Materials Handling</span>
+                    <span class="skill-tag">Load &amp; Unload Operations</span>
+                    <span class="skill-tag">Gatekeeping</span>
+                    <span class="skill-tag">Logistics</span>
+                </div>
+
+                <h3 class="skills-subheading">Technical &amp; Development</h3>
+                <div class="skills-grid">
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">React Native</span>
+                    <span class="skill-tag">Data Analysis</span>
+                    <span class="skill-tag">Team Leadership</span>
+                    <span class="skill-tag">Communication</span>
+                    <span class="skill-tag">Problem Solving</span>
+                    <span class="skill-tag">Adaptability</span>
                 </div>
             </section>
         </main>
+
         <footer>
-            <p>© 2025 Noah Gabbard</p>
+            <p>&copy; 2026 Noah Gabbard</p>
         </footer>
-        <script>
-            function navigateToProjects() {
-                window.location.href = "projects.html";
-            }
-        </script>
+
+        <script src="JavaScript/index.js"></script>
     </body>
 </html>
