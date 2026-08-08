@@ -1,4 +1,31 @@
 document.addEventListener('DOMContentLoaded', function () {
+    var themeToggle = document.getElementById('theme-toggle');
+    if (themeToggle) {
+        function getTheme() {
+            return document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+        }
+
+        function setTheme(theme) {
+            var isDark = theme === 'dark';
+            document.documentElement.setAttribute('data-theme', theme);
+            themeToggle.setAttribute('aria-pressed', String(isDark));
+            var label = isDark ? 'Switch to light mode' : 'Switch to dark mode';
+            themeToggle.setAttribute('aria-label', label);
+            themeToggle.setAttribute('title', label);
+            themeToggle.textContent = isDark ? '☀' : '☾';
+            try {
+                localStorage.setItem('theme', theme);
+            } catch (error) {
+                // Persisting theme is optional; ignore storage errors.
+            }
+        }
+
+        setTheme(getTheme());
+        themeToggle.addEventListener('click', function () {
+            setTheme(getTheme() === 'dark' ? 'light' : 'dark');
+        });
+    }
+
     // Back navigation
     var backArrow = document.getElementById('back-arrow');
     if (backArrow) {
