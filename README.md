@@ -1,4 +1,4 @@
-# Noah Gabbard's Portfolio Website
+# Noah Michael Gabbard's Portfolio Website
 
 Welcome to my personal portfolio website! This site showcases my professional experience, skills, and projects as a developer and technology enthusiast.
 
