@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
+    var repoOverrides = {
+        'vouch-community-tool-sharing': {
+            html_url: 'https://github.com/NoahGabbard/vouch-community-tool-sharing',
+            description: 'Vouch is a hyper-local tool-sharing mobile app that helps neighbors lend and borrow equipment with clear pricing, trust signals, handover verification, and rental protection.',
+            language: 'TypeScript'
+        }
+    };
+
     var themeToggle = document.getElementById('theme-toggle');
     if (themeToggle) {
         function getTheme() {
@@ -55,7 +63,28 @@ document.addEventListener('DOMContentLoaded', function () {
             container.setAttribute('aria-busy', 'false');
             container.innerHTML = '';
 
-            var filtered = repos.filter(function (r) { return !r.fork; });
+            var filtered = repos.filter(function (r) { return !r.fork; }).map(function (repo) {
+                var override = repoOverrides[repo.name];
+                return override ? Object.assign({}, repo, override) : repo;
+            });
+
+            Object.keys(repoOverrides).forEach(function (repoName) {
+                var alreadyPresent = filtered.some(function (repo) {
+                    return repo.name === repoName;
+                });
+
+                if (!alreadyPresent) {
+                    filtered.unshift(
+                        Object.assign(
+                            {
+                                name: repoName,
+                                stargazers_count: 0
+                            },
+                            repoOverrides[repoName]
+                        )
+                    );
+                }
+            });
 
             if (!filtered.length) {
                 container.innerHTML = '<p class="loading-state">No public repositories found.</p>';
