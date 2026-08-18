@@ -129,6 +129,19 @@ footer,
     font-weight: 400;
 }
 
+.hero-highlight {
+    display: inline-block;
+    margin: 0 auto 24px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(147, 197, 253, 0.45);
+    background: rgba(15, 23, 42, 0.35);
+    color: #dbeafe;
+    font-size: 0.86rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
 .contact-bar {
     display: flex;
     flex-wrap: wrap;
